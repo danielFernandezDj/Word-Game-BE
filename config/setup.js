@@ -6,11 +6,9 @@ const createTables = async () => {
             DROP TABLE IF EXISTS users;
             CREATE TABLE IF NOT EXISTS users (
                 user_id SERIAL PRIMARY KEY,
-                first_name VARCHAR(255),
-                last_name VARCHAR(255),
                 username VARCHAR(255) UNIQUE NOT NULL,
-                email VARCHAR(255) UNIQUE NOT NULL,
-                password_digest TEXT NOT NULL
+                password_digest TEXT NOT NULL,
+                email VARCHAR(255) UNIQUE NOT NULL
             );
 
             CREATE TABLE IF NOT EXISTS favorites (
