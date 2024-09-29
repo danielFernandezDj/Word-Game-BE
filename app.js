@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client', 'build')));
+app.use(express.static(path.join(__dirname, 'public', 'build')));
 
 // API routes
 app.use('/', indexRouter);
@@ -37,7 +37,7 @@ app.use('/wordle', wordleRouter);
 
 // The catch-all handler: for any request that doesn't match one above, send back index.html.
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'build', 'index.html'));
 });
 
 // catch 404 and forward to error handler
