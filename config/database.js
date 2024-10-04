@@ -1,12 +1,12 @@
+const pgp = require('pg-promise')();
 const dotenv = require('dotenv');
-const { Pool } = require('pg');
 dotenv.config();
 
-const pool = new Pool({
-    connectionString: process.env.DATABASE_URL, // Use DATABASE_URL provided by Railway
+const db = pgp({
+    connectionString: process.env.DATABASE_PUBLIC_URL,
     ssl: {
-        rejectUnauthorized: false // Necessary for external connections in some cases
+        rejectUnauthorized: false
     }
 });
 
-module.exports = pool;
+module.exports = db;
