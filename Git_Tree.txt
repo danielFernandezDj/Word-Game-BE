@@ -1,0 +1,8 @@
+* 	 (origin/front-end-up1, front-end-up1, deploy-first) frontend title updates
+* 	 (origin/deploy-first, table-config) testing deploy
+* 	 (origin/table-config) added login/signup flow with tables redone
+* 	 added tables and fixed with promise
+* 	 (HEAD -> main, origin/server-setup, server-setup) Finnaly connected to deployed servers
+* 	 (origin/main, origin/HEAD) added start files for serve
+* 	 Backend templates
+* 	 Initial commit
