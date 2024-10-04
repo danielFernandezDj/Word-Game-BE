@@ -86,8 +86,7 @@ You can view a live demo of the application at [Demo Link](https://word-world-be
 - Enhance the UI/UX with animations and better styling.
 - Implement a leaderboard to display top scores.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 ### `npm start`
 
@@ -133,3 +132,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
